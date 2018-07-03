@@ -1,0 +1,376 @@
+
+/* Global */
+.inner {width: 100%; max-width: 1200px;}
+
+/*LayOut*/
+#wrap {position: relative; overflow: hidden; font-size: 14px;}
+
+/* Header */
+#wrap input {display: none;}
+header {position: absolute; top: 0; left: 0; right: 0; height: 74px; background-color: transparent; transition: 0.4s; z-index: 2;}
+header .top {padding-top: 16px;}
+header .top .fll {}
+header .top .fll a {display: block;}
+header .top .fll a img:nth-child(1) {display: block;}
+header .top .fll a img:nth-child(2) {display: none;}
+#wrap #nav_pop:checked~header .inner .top .fll a img:nth-child(1) {display: none;}
+#wrap #nav_pop:checked~header .inner .top .fll a img:nth-child(2) {display: block;}
+header .top .flr {}
+header .top .flr ul {float: left; margin-right: 42px;}
+header .top .flr ul li {float: left;}
+header .top .flr ul li+li {margin-left: 7px;}
+header .top .flr ul li a {display: block;}
+header .top .flr ul li a img:nth-child(1) {display: block;}
+header .top .flr ul li a img:nth-child(2) {display: none;}
+#wrap #nav_pop:checked~header .inner .top .flr ul li a img:nth-child(1) {display: none;}
+#wrap #nav_pop:checked~header .inner .top .flr ul li a img:nth-child(2) {display: block;}
+header .top .flr label {float: left; position: relative; margin-top: 1px; width: 28px; height: 23px; }
+header .top .flr label i {position: absolute; right: 0; margin-left: -18px; margin-top: 0px; height: 2px; width: 28px; background-color: #fff; transition: top 0.4s 0.4s, width 0s 0.4s, margin-left 0s 0.4s, transform 0.4s;}
+header .top .flr label i:nth-child(1) {top: 33%;}
+header .top .flr label i:nth-child(2) {top: 66%;}
+header .top .flr label i:nth-child(3) {top: 99%;}
+#wrap #nav_pop:checked~header .inner .top .flr label i {margin-top: 3px; transition: top 0.5s, width 0s 0.5s, margin-left 0s 0.5s, transform 0.5s 0.5s; background-color: #262626; }
+#wrap #nav_pop:checked~header .inner .top .flr label i:nth-child(1) {top: 50%; transform: rotate(45deg);}
+#wrap #nav_pop:checked~header .inner .top .flr label i:nth-child(2) {top: 50%; width: 0;}
+#wrap #nav_pop:checked~header .inner .top .flr label i:nth-child(3) {top: 50%; transform: rotate(-45deg);}
+#wrap #nav_pop:checked~header nav {top: 74px;}
+#wrap #nav_pop:checked~header {background-color: #fff;}
+header nav {position: absolute; top: -292px; width: 100%; height: 219px; border-top: 1px solid #eaeaea; background-color: #fff; transition: 0.4s; }
+header nav dl {float: left; display: inline-block; padding-right: 10.4%;}
+header nav dl:last-child {padding-right: 0;}
+header nav dl a {display: inline-block;}
+header nav dl dt {margin: 20px 0 16px 0; color: #272727; font-family: 'arial', sans-serif; font-size: 0.938em; font-weight: bold;}
+header nav dl dd {line-height: 14px; color: #363636; font-size: 0.750em;}
+header nav dl dd+dd {margin-top: 14px;}
+header nav dl.exhibition>dd {margin-top: 9px;}
+header nav dl a:hover {text-decoration: underline;}
+
+
+
+/* Footer */
+
+
+footer {margin-top: 100px; padding: 30px 0; width: 100%; background-color: #262626;}
+footer p {font-family: "dotum", sans-serif;}
+footer em {font-family: "dotum", sans-serif; font-weight: bold; margin-right: 10px;}
+footer span {font-family: "dotum", sans-serif;}
+footer a {font-family: "dotum", sans-serif;}
+footer ul {height: 100%; width: 100%; position: relative;}
+footer .mediaquery_1 {display: block;}
+footer .mediaquery_1 ul li {float: left; height: 100%; font-size: 0.875em;}
+footer .mediaquery_1 ul li+li {}
+footer .mediaquery_1 ul li+li+li {position: relative; padding-left: 1.8%;}
+footer .mediaquery_1 ul li+li+li:before {content: ""; position: absolute; top: -2px; left: 0; width: 1px; height: 64px; background-color: #4a4a4a;}
+footer .mediaquery_1 ul li p {padding-bottom: 16px; color: #fff; font-weight: bold;}
+footer .mediaquery_1 ul li .text {margin-left: 12px;  height: 29px; color: #d3d3d3;}
+footer .mediaquery_1 ul li .icon {margin-top: 3px;}
+
+footer .mediaquery_1 ul {width: 100%; height: 100%;}
+footer .mediaquery_1 ul li.logo {width: 12.5%; margin-top: 25px;}
+footer .mediaquery_1 ul .logo a {}
+footer .mediaquery_1 ul .address {width: 24%;}
+footer .mediaquery_1 ul .address .icon {width: 23px; height: 24px; background: url(../img/btm_info_1.png) no-repeat 0 0;}
+footer .mediaquery_1 ul .faq {width: 18.5%; }
+footer .mediaquery_1 ul .faq .icon {width: 24px; height: 24px; background: url(../img/btm_info_2.png) no-repeat 0 0;}
+footer .mediaquery_1 ul .contact {width: 20.5%; }
+footer .mediaquery_1 ul .contact p {text-transform: uppercase;}
+footer .mediaquery_1 ul .contact .icon {margin-top: 5px; width: 23px; height: 17px; background: url(../img/btm_info_3.png) no-repeat 0 0;}
+footer .mediaquery_1 ul .contact .text span {line-height: 28px;}
+
+footer .mediaquery_1 ul .personal {width: 24%; color: #fff;}
+footer .mediaquery_1 ul .personal p span a {display: inline-block; color: #d3d3d3; font-weight: bold;}
+footer .mediaquery_1 ul .personal p span+span {margin-left: 35px;}
+footer .mediaquery_1 ul .personal>span {color: #949494; font-size: 0.875em;}
+
+footer .mediaquery_2 {display: none;}
+footer .mediaquery_2 ul {}
+footer .mediaquery_2 ul li {text-align: center; color: #fff; font-size: 0.875em;}
+footer .mediaquery_2 ul li .text span {color: #d3d3d3; }
+footer .mediaquery_2 ul li.logo {}
+footer .mediaquery_2 ul li.logo a {display: inline-block;}
+footer .mediaquery_2 ul li.personal {margin-top: 20px; color: #d3d3d3;}
+footer .mediaquery_2 ul li.address {margin-top: 5px;}
+footer .mediaquery_2 ul li.faq {margin-top: 5px;}
+footer .mediaquery_2 ul li.copy {margin-top: 20px; color: #949494;}
+
+/* Container */
+
+#container {width: 100%; font-family: 'franklin gothic', "dotum", sans-serif;}
+#visual .bg {overflow: hidden; width: 100%; height: 750px; position: relative;}
+#visual .bg .inner {position: relative;}
+#visual .bg .inner .main_text {position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); width: 254px; height: 350px; z-index: 1;}
+#visual .bg ul {position: absolute; top: 0; width: 400%; height: 100%; animation: main 15s infinite; }
+#visual .bg ul li {float: left; width: 25%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+section {margin-top: 30px;}
+
+.content_01 {width: 100%;}
+.content_01>div {height: 163px; color: #fff;}
+.content_01>div .icon {float: left; margin-left: 5%; width: 29.56%; height: 100%; background-position: center;}
+.content_01>div .text {float: left; margin-left: 5%; padding-top: 8.46%;}
+.content_01>div .text p {font-size: 1.750em; text-transform: uppercase; font-family: 'franklin gothic', sans-serif;}
+.content_01>div .text i {display: block; margin: 22px 0 9px 0; width: 40px; height: 1px; background-color: #bbb;}
+.content_01>div .text span {display: block; font-family: "dotum", sans-serif; font-size: 0.875em; letter-spacing: -1px;}
+.content_01 .info_area {width: 66.6%;}
+.content_01 .info_area .hours {width: 48.85%; height: 100%; background-color: #262626;}
+.content_01 .info_area .hours a {}
+.content_01 .info_area .hours .icon {}
+.content_01 .info_area .hours .text {}
+.content_01 .info_area .directions {width: 48.85%; height: 100%; background-color: #262626;}
+.content_01 .info_area .directions .text em {display: block; margin-top: 9px; width: 104px; height: 24px; border: 1px solid #fff; font-family: "dotum", sans-serif; font-size: 0.875em; text-align: center; line-height: 24px; transition: 0.4s;}
+.content_01 .info_area .directions .text em a {display: block; width: 100%; height: 100%; }
+.content_01 .info_area .directions .text em:hover {background-color: #fff; color: black;}
+.content_01 .video {margin-left: 1.5%; width: 31.9%;}
+.content_01 .video iframe {width: 100%; height: 100%;}
+
+.content_02 {width: 100%; height: 600px; overflow: hidden;}
+.content_02 .cnt_tit { font-size: 1.750em; color: #fff; font-family: 'franklin gothic', sans-serif; text-transform: uppercase;}
+.content_02 span {color: #d2d2d2; letter-spacing: -1px;}
+.content_02 .cnt_01 {width: 66.6%; height: 100%; float: left;}
+.content_02 .cnt_01 ul {}
+.content_02 .cnt_01 ul li a .text span {font-family: "dotum", sans-serif; font-size: 0.875em;}
+.content_02 .cnt_01 ul li {float: left; height: 390px;}
+.content_02 .cnt_01 ul li:nth-child(1) {position: relative; width: 66.7%; background: url(../img/program.jpg) no-repeat 0 0; background-size: 600px;}
+.content_02 .cnt_01 ul li:nth-child(1) a .text {position: absolute; top: 30px; left: 30px;}
+.content_02 .cnt_01 ul li:nth-child(1) a .text p {margin-top: -5px; margin-bottom: 5px;}
+.content_02 .cnt_01 ul li:nth-child(1) a .text span {display: block;}
+.content_02 .cnt_01 ul li:nth-child(2) {position: relative; overflow: hidden; margin-left: 2.3%; width: 31%; background: url(../img/join_img.jpg) no-repeat 56% 73%;}
+.content_02 .cnt_01 ul li:nth-child(2) a .text {position: absolute; margin-bottom: -5px; bottom: 30px; left: 50%; transform: translate(-50%,0);}
+.content_02 .cnt_01 ul li:nth-child(2) a .text p {padding-top: 5px;}
+.content_02 .cnt_01 ul li:nth-child(3) {margin-top: 2.3%; padding: 30px; width: 100%; height: 195px; background-color: #262626;}
+.content_02 .cnt_01 ul li:nth-child(3) .text {width: 100%; margin-top: -5px;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .fll {margin-top: 28px; width: 50%; font-size: 0.875em;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .fll .no_tit {padding-right: 77px; height: 32px; color: #d3d3d3; font-family: "dotum", sans-serif; font-weight: bold;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .fll .no_cnt {padding-right: 80px; margin-top: 13px; color: #7a7a7a; font-family: "dotum", sans-serif; letter-spacing: -1px;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .nt_01 {position: relative;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .nt_01:after {content: ""; position: absolute; top: 0; left: 100%; width: 1px; height: 75px; background-color: #c4c4c4;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .nt_02 {padding-left: 50px;}
+.content_02 .cnt_01 ul li a {display: block; width: 100%; height: 100%;}
+
+.content_02 .cnt_02 {float: left; position: relative; margin-left: 1.5%; width: 31.9%; height: 600px;}
+.content_02 .cnt_02 .tit {position: absolute; left: 30px; top: 30px; margin-top: -5px; width: 84.37%;}
+.content_02 .cnt_02 .tit .arrow {position: absolute; top: 5px; right: 0;}
+.content_02 .cnt_02 .tit .arrow .aright {margin-left: 24px;}
+.content_02 .cnt_02 ul {height: 100%;}
+.content_02 .cnt_02 ul li {width: 100%; height: 100%;}
+.content_02 .cnt_02 ul li a {display: block; width: 100%; height: 100%;}
+
+.museum_shop {width: 100%; margin-top: 50px;}
+.museum_shop .bg {width: 100%; height: 486px; background-color: #f8f8f8;}
+.museum_shop .bg {}
+.museum_shop .bg .tit {padding: 44px 0 92px 0; text-align: center;}
+.museum_shop .bg .tit span {position: relative; font-size: 25px; color: #262626; font-family: 'franklin gothic', sans-serif; text-transform: uppercase;}
+.museum_shop .bg .tit span:before {content: ""; display: none; position: absolute; top: -3px; right: 190px; width: 156px; height: 40px; background-image: url(../img/prd_arr1_1.png); background-repeat: no-repeat;}
+.museum_shop .bg .tit span:after {content: ""; display: none; position: absolute; top: -3px; left: 190px; width: 156px; height: 40px; background-image: url(../img/prd_arr2_1.png); background-repeat: no-repeat;}
+.museum_shop .bg ul {position: absolute; left: 50%; width: 1402px; transform: translate(-50%,0);}
+.museum_shop .bg ul li {float: left; overflow: hidden; width: 250px; height: 250px; border-radius: 50%; background-color: #fff; background-position: center;}
+.museum_shop .bg ul li+li {margin-left: 38px;}
+.museum_shop .bg ul li a {display: block; width: 100%; height: 100%;}
+
+.insta {padding-top: 70px;}
+.insta .insta_logo {float: left;}
+.insta .insta_logo .logo {margin: 63px 0 15px 0;}
+.insta .insta_logo .text {}
+.insta .insta_logo .text p {color: #ababab; font-size: 0.875em; letter-spacing: -1px;}
+.insta .insta_logo .follow {margin-top: 15px;}
+.insta .insta_logo .follow a {display: block; width: 70px; height: 24px; color: #fff; font-size: 0.8125em; text-align: center; line-height: 24px; font-family: "dotum", sans-serif; background-color: #262626;}
+.insta .insta_cnt {position: relative; float: right; margin-left: 40px; margin-right: 40px;}
+.insta .insta_cnt .arrow {display: none;}
+.insta .insta_cnt .arrow label:nth-child(1) {position: absolute; top: 50%; left: -4%; width: 17px; height: 39px; transform: translate(0,-50%); background-image: url(../img/insta_arrow_l.png);}
+.insta .insta_cnt .arrow label:nth-child(2) {position: absolute; top: 50%; right: -4%; width: 17px; height: 39px; transform: translate(0,-50%); background-image: url(../img/insta_arrow_r.png);}
+.insta .insta_cnt ul {display: none; width: 711px; height: 100%;}
+.insta .insta_cnt ul li {float: left; overflow: hidden; width: 33%; height: 100%;}
+.insta .insta_cnt ul li+li {margin-left: 0.5%;}
+.insta .insta_cnt ul li a {display: block; width: 100%; height: 100%;}
+.insta .insta_cnt ul li a img {width: 100%;}
+.insta .insta_cnt #insta_page_01:checked~.insta_cnt_01 {display: block;}
+.insta .insta_cnt #insta_page_02:checked~.insta_cnt_02 {display: block;}
+.insta .insta_cnt #insta_page_01:checked~.arrow_01 {display: block;}
+.insta .insta_cnt #insta_page_02:checked~.arrow_02 {display: block;}
+
+/*animation*/
+
+@keyframes main {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	33.33% {margin-left: -100%;}
+	63% {margin-left: -100%;}
+	66.66% {margin-left: -200%;}
+	97% {margin-left: -200%;}
+	100% {margin-left: -300%;}
+}
+
+
+/*MediaQuery*/
+
+@media screen and (max-width: 1280px) {
+.inner {padding: 0 20px;}
+
+}
+
+@media screen and (max-width: 1200px) { /*인스타는 1200부터 이상*/
+
+.insta .insta_logo .logo {margin-top: 50px}
+.insta .insta_cnt { margin-right: 30px;}
+.insta .insta_cnt ul {width: 640px;}
+footer .mediaquery_1 ul li .icon {display: none;}
+footer .mediaquery_1 ul li .text {margin-left: 0;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .fll .no_tit {padding-right: 20px; overflow: hidden;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .fll .no_cnt {padding-right: 20px; height: 30px;}
+}
+
+
+@media screen and (max-width: 1024px) { /*다바꿔야함...  notice 이떄부터 작은랩탑 아이패드 적용 footer교체*/
+
+.inner {padding: 0 10px;}
+header .inner {padding: 0 20px;}
+header nav dl dd img {display: none;}
+header nav dl {padding-right: 9.5%;}
+header nav dl:nth-child(2) a dd+dd {margin-top: 0;}
+.content_01>div {height: 150px;}
+.content_01>div .text p {font-size: 1.250em;}
+.content_01>div .text span {font-size: 	0.813em;}
+.content_01>div .icon {margin-left: 3%;}
+.content_01>div .text {padding-top: 11%; margin-left: 8%; width: 57%;}
+.content_01>div .text i {margin: 12px 0;}
+.content_02 {height: 700px; position: relative;}
+.content_02 .cnt_01 {width: 100%; float: left;}
+.content_02 .cnt_01 ul li:nth-child(1) {background: url(../img/program.jpg) no-repeat 94% 44%; background-size: 700px;}
+.content_02 .cnt_01 ul li:nth-child(2) {margin-left: 1.5%; width: 31.8%;}
+.content_02 .cnt_01 ul li:nth-child(3) {width: 31.8%; height: 283px; margin-top: 23px;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .fll {width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: normal;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .nt_01:after {content: ""; display: none;}
+.content_02 .cnt_01 ul li:nth-child(3) .text .nt_02 {padding-left: 0; width: 100%;}
+.content_02 .cnt_02 {position: absolute; float: none; top: 413px; right: 0; height: 283px; width: 66.7%;}
+
+.museum_shop .bg .list {width: 1024px; height: 300px; text-align: center; overflow: auto;}
+.museum_shop .bg .list ul {width: 1412px; position: static; transform: none; left: 0;}
+.museum_shop .bg .list ul li {float: none; display: inline-block;}
+.museum_shop .bg .list ul li+li {margin-left: 10px;}
+.museum_shop .bg .list ul li a {display: block; width: 100%; height: 100%;}
+.museum_shop .bg .tit span:after {display: block;}
+.museum_shop .bg .tit span:before {display: block;}
+section.insta {padding: 0 20px; height: 300px;}
+.insta .insta_logo {float: none; margin-top: 30px; margin: auto;}
+.insta .insta_logo .logo img {margin: 0 auto;}
+.insta .insta_logo .text {display: none;}
+.insta .insta_logo .follow {display: none;}
+.insta .insta_cnt {position: absolute; float: none; margin: 0; top: 112px; left: 50%; transform: translate(-50%,0); }
+footer {}
+footer .mediaquery_1 {display: none;}
+footer .mediaquery_2 {display: block;}
+footer .mediaquery_2 .personal span a {font-weight: bold;}
+
+}
+
+
+
+@media screen and (max-width: 768px) {  /*인스타 하단 바꾸기 메뉴 두줄로 */
+
+.inner {padding: 0 5px;}
+header .top .fll a img {width: 120px;}
+header {height: 70px;}
+header nav {top: -350px; height: 345px;}
+header nav dl {padding-right: 0; width: 30%; height: 140px; margin-left: 5%;}
+header nav dl:nth-of-type(1) {margin-left: 0; width: 25%;}
+header nav dl:nth-of-type(4) {margin-left: 0; width: 25%;}
+#wrap #nav_pop:checked~header nav {top: 70px;}
+#visual .bg .inner .main_text img {width: 220px; margin: auto;}
+section {margin-top: 10px;}
+.content_01>div {height: 122px;}
+.content_01>div .text p {font-weight: bold;}
+.content_01>div .text {padding-top: 8%; width: 100%;}
+.content_01>div .icon {display: none;}
+.content_01 .video iframe {width: 100%; height: 100%;}
+.content_02 {height: 890px; width: 100%;}
+.content_02 .cnt_01 ul li {height: 290px;}
+.content_02 .cnt_01 ul li a .text p {font-weight: bold;}
+.content_02 .cnt_01 ul li:nth-child(1) {width: 100%; background-size: 800px; background: url(../img/program.jpg) no-repeat 96% 17%;}
+.content_02 .cnt_01 ul li:nth-child(2) {margin-top: 10px; margin-left: 0; width: 49.25%;}
+.content_02 .cnt_01 ul li:nth-child(2) a .text {top: 30px; left: 30px; transform: none;}
+.content_02 .cnt_01 ul li:nth-child(2) a .text p {margin-top: -53px;}
+.content_02 .cnt_01 ul li:nth-child(2) a .text span {display: inline-block; margin-top: 27px;}
+.content_02 .cnt_01 ul li:nth-child(3) {float: right; margin-top: 10px; width: 49.25%; height: 290px;}
+.content_02 .cnt_02 {width: 100%; top: 600px; height: 290px;}
+.content_02 .cnt_02 .tit .arrow {right: -4.2%;}
+.content_02 .cnt_02 .tit .cnt_tit {font-weight: bold;}
+
+section.insta {height: 410px;}
+.insta .insta_cnt {top: 95px;}
+.insta .insta_cnt ul {width: 430px;}
+.insta .insta_cnt ul.insta_cnt_02 {margin-top: 143px; display: block;}
+.insta .insta_logo .logo img {width: 190px;}
+.insta .insta_cnt #insta_page_01:checked~.arrow_01 {display: none;}
+.museum_shop .bg {height: 440px;}
+.museum_shop .bg .tit span {font-weight: bold;}
+.museum_shop .bg .list {width: 100%; height: 250px;}
+.museum_shop .bg .list ul {width: 1112px;}
+.museum_shop .bg ul li {width: 200px; height: 200px;}
+footer {margin-top: 30px;}
+
+.museum_shop .bg .tit span:before {top: 7px; width: 31px; height: 13px; background-image: url(../img/prd_arr1.png);}
+.museum_shop .bg .tit span:after {top: 7px; width: 31px; height: 13px; background-image: url(../img/prd_arr2.png);}
+
+}
+
+	
+
+
+@media screen and (max-width: 480px) {  /*cnt1하나로 바꿔야함*/
+
+header {height: 64px;}
+#wrap #nav_pop:checked~header nav {top: 64px;}
+header .top .flr ul {display: none;}
+#visual .bg {height: 480px;}
+section {margin-top: 7px;}
+.content_01 .info_area {width: 100%;}
+.content_01 .info_area .hours {width: 49.24%;}
+.content_01 .info_area .directions {width: 49.24%;}
+.content_01 .video {display: none;}
+.content_02 {height: 676px;}
+.content_02 .cnt_01 ul li {height: 220px;}
+.content_02 .cnt_01 ul li:nth-child(2) {width: 100%;}
+.content_02 .cnt_01 ul li:nth-child(1) a .text {top: 20px; left: 20px;}
+.content_02 .cnt_01 ul li:nth-child(2) {margin-top: 7px;}
+.content_02 .cnt_01 ul li:nth-child(2) a .text {top: 20px; left: 20px;}
+.content_02 .cnt_01 ul li:nth-child(2) a .text p {margin-top: -47px;}
+.content_02 .cnt_01 ul li:nth-child(2) a .text span {display: inline-block; margin-top: 22px;}
+.content_02 .cnt_01 ul li:nth-child(3) {display: none;}
+.content_02 .cnt_02 {top: 456px; height: 220px;}
+.content_02 .cnt_02 .tit {top: 20px; left: 20px;}
+.content_02 .cnt_01 ul li a .text p {font-size: 1.429em;}
+.content_02 .cnt_02 .tit .cnt_tit {font-size: 1.429em;}
+.museum_shop .bg .tit span:before {top: 5px; right: 160px;}
+.museum_shop .bg .tit span:after {top: 5px; left: 160px;}
+.museum_shop {margin-top: 25px;}
+.museum_shop .bg {height: 302px;}
+.museum_shop .bg .tit {padding: 25px 0 25px 0;}
+.museum_shop .bg .tit span {font-size: 1.429em;}
+.museum_shop .bg .list {height: 225px;}
+.insta .insta_logo .logo {margin-top: 25px;}
+.insta .insta_logo .logo img {width: 150px;}
+.insta .insta_cnt ul {width: 300px;}
+.insta .insta_cnt {top: 70px;}
+section.insta {height: 280px;}
+.insta .insta_cnt ul.insta_cnt_02 {margin-top: 99px;}
+
+footer {margin-top: 25px;}
+footer .mediaquery_2 ul li .text .enter {display: block;}
+footer .mediaquery_2 ul li .text .ha {display: none;}  
+
+}
+
+@media screen and (max-width: 320px) {
+
+header nav dl:nth-of-type(3) {margin-left: 9%;}
+header nav dl:nth-of-type(6) {margin-left: 9%;}
+#visual .bg {height: 400px;}
+#visual .bg .inner .main_text {transform: translate(-50%, -33%);}
+#visual .bg .inner .main_text img {width: 160px;}
+.content_01 {height: 251px;}
+.content_01>div .icon {display: block; margin-left: 6%;}
+.content_01>div .text {padding-top: 5%; width: 55%;}
+.content_01 .info_area .hours {width: 100%;}
+.content_01 .info_area .directions {width: 100%; margin-top: 7px;}
+
+}

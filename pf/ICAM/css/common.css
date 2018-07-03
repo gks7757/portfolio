@@ -1,0 +1,20 @@
+/* CSS Reset */
+* {margin: 0; padding: 0; color: inherit; font-family: 'Nanum Gothic', 'franklin gothic', sans-serif; font-size: 1em; font-style: normal; font-weight: normal; text-decoration: none; vertical-align: middle; border: 0 solid transparent; outline: 0; box-sizing: border-box; background-repeat: no-repeat; }
+ul, ol {list-style: none;}
+b, strong {font-weight: bold;}
+table {table-layout: fixed; border-collapse: collapse;}
+input[type="button"],input[type="submit"],button,a,label {cursor: pointer;}
+img {display: block;}
+
+/* Common  */
+.clearfix:after {content: ""; display: block; clear: both;}
+.inner {position: relative; margin: auto; height: 100% }
+.inner:after {content: ""; display: block; clear: both;}
+.ellpsis {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/* Global */
+::placeholder {opacity: 0.6;}
+.fll {float: left;}
+.flr {float: right;}
+
+
