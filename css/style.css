@@ -156,8 +156,8 @@ nav .btm_ul>li+li {margin-top: 20px;}
 
 .txt_bar {position: absolute; left: 20vh; top: 28.5vh;  width: 20px; height: 1px; background-color: #1a1a1a;}
 .web_txt {margin: 27vh 0 0 24vh; width: 270px; overflow: hidden;}
-.web_txt .web_all {width: 200%;}
-.web_txt .web_all .web_cate {float: left; width: 50%;}
+.web_txt .web_all {width: 300%;}
+.web_txt .web_all .web_cate {float: left; width: 33.3333%;}
 .web_txt .web_all .web_cate .web_cnt {}
 .web_cnt em {color: #adadad; font-family: 'Noto Sans KR', sans-serif; text-transform: uppercase;}
 .web_cnt span { font-family: 'Helvetica-Light', sans-serif; font-size: 30px;  font-weight: bold;}
@@ -182,8 +182,8 @@ nav .btm_ul>li+li {margin-top: 20px;}
 
 .web_mockup {position: absolute; left: 45%; transform: translateX(5%); top: 20vh; width: 1000px; height: 500px; background-image: url(../img/mockup.png); background-repeat: no-repeat; background-size: 950px;}
 .web_mockup .frame {position: absolute; top: 60px; left: 50%; transform: translateX(-52%);  width: 700px; height: 396px; overflow: hidden;}
-.web_mockup .frame ul.frame_ul {width: 200%;}
-.web_mockup .frame ul li {float: left; width: 50%;}
+.web_mockup .frame ul.frame_ul {width: 300%;}
+.web_mockup .frame ul li {float: left; width: 33.3333%;}
 .web_mockup .frame ul li img {width: 720px;}
 
 #work {position: relative;}
@@ -242,11 +242,11 @@ nav .btm_ul>li+li {margin-top: 20px;}
 #info_wrap .header {background-color: #f5f6f6;}
 #info_wrap .top {width: 1000px;margin: 0 auto;overflow: hidden;padding: 50px 0;}
 #info_wrap .tab_slide {width: 200%; transition: 0.3s;}
-#info_wrap .tab_slide .slide_cnt{width: 50%;float: left;}
+#info_wrap .tab_slide .slide_cnt{float: left; width: 50%;}
 #info_wrap .slide_cnt .mobile {margin-top: 70px;}
-#info_wrap .slide_cnt a img {width: 100%; margin: 0 auto;}
+#info_wrap .slide_cnt a img {margin: 0 auto; width: 100%;}
 #info_wrap .slide_cnt a .mobile_img {width: 590px;}
-#info_wrap .btm {text-align: center;padding-bottom: 60px;}
+#info_wrap .btm {padding-bottom: 60px; text-align: center;}
 #info_wrap .controls {display: inline-block;}
 #info_wrap .remote_control {float: left;}
 #info_wrap .remote_control a {text-indent: -9999px;}

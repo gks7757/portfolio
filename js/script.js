@@ -498,9 +498,11 @@ $(document).ready(function(){
 
 	$('.more').on('click',function () {
 		if(nowidx==0){
-			$(this).attr('href','http://gks7757.dothome.co.kr/sub/info_leeyoung.html')
+			$(this).attr('href','https://gks7757.github.io/portfolio/sub/info_twosomeplace.html')
 		} else if (nowidx==1) {
-			$(this).attr('href','http://gks7757.dothome.co.kr/sub/info_portfolio.html')
+			$(this).attr('href','https://gks7757.github.io/portfolio/sub/info_leeyoung.html')
+		} else if (nowidx==2) {
+			$(this).attr('href','https://gks7757.github.io/portfolio/sub/info_portfolio.html')
 		};
 	});
 
