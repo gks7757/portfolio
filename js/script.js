@@ -498,7 +498,7 @@ $(document).ready(function(){
 
 	$('.more').on('click',function () {
 		if(nowidx==0){
-			$(this).attr('href','https://gks7757.github.io/portfolio/sub/info_twosomeplace.html')
+			$(this).attr('href','https://gks7757.github.io/portfolio/sub/info_twosome.html')
 		} else if (nowidx==1) {
 			$(this).attr('href','https://gks7757.github.io/portfolio/sub/info_leeyoung.html')
 		} else if (nowidx==2) {
