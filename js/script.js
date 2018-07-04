@@ -166,7 +166,7 @@ $(document).ready(function(){
 		
 	}
 
-	$(window).on('DOMMouseScroll mousewheel wheel', function(event){
+	$(window).on('mousewheel', function(event){
 
 		var direction;
 		var D = event.wheelDelta;
