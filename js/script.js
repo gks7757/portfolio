@@ -166,7 +166,7 @@ $(document).ready(function(){
 		
 	}
 
-	$(window).on('mousewheel', function(event){
+	$(window).on('mousewheel', function(){
 
 		var direction;
 		var D = event.wheelDelta;
