@@ -286,6 +286,7 @@ nav .btm_ul>li+li {margin-top: 20px;}
 #info_wrap .palette.twosome .color_01 i {background-color: #ae1d31;}
 #info_wrap .palette.twosome .color_02 i {background-color: #fff;}
 #info_wrap .palette.twosome .color_03 i {background-color: #e5e5e5;}
+#info_wrap.twosome .control_prev {margin-right: 0;}
 
 /*MediaQuery*/
 
