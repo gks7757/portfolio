@@ -191,8 +191,8 @@ nav .btm_ul>li+li {margin-top: 20px;}
 .W_pop_up .W_pop {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #ddd;}
 .W_pop_up .W_pop i {display: block; position: absolute;  right: 0; top: 0; width: 50px; height: 50px; background-image: url(../img/x.png); background-size: 50px; cursor: pointer;}
 .W_pop_up .W_pop i:hover {background-image: url(../img/x_h.png);}
-
-
+.dd {display: block;}
+.dd img {width: 15px; height: 15px;}
 
 .ctt_wrap {position: absolute; width: 300px; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 2; overflow: hidden;}
 .ctwp_1 {margin-left: -25%;}
